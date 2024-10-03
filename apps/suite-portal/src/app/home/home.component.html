@@ -1,0 +1,9 @@
+<form [formGroup]="requestForm" (ngSubmit)="onSubmit()">
+  <input formControlName="name" placeholder="Name" required>
+  <input formControlName="email" type="email" placeholder="Email" required>
+  <input formControlName="unitNumber" placeholder="Unit Number" required>
+  <input formControlName="serviceType" placeholder="Service Type" required>
+  <input formControlName="summary" placeholder="Summary" required>
+  <textarea formControlName="details" placeholder="Details"></textarea>
+  <button type="submit">Submit</button>
+</form>

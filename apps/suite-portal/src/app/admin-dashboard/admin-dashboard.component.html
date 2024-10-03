@@ -1,0 +1,21 @@
+<table>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Unit</th>
+      <th>Service Type</th>
+      <th>Summary</th>
+      <th>Actions</th>
+    </tr>
+    <tr *ngFor="let request of requests">
+      <td>{{ request.name }}</td>
+      <td>{{ request.email }}</td>
+      <td>{{ request.unitNumber }}</td>
+      <td>{{ request.serviceType }}</td>
+      <td>{{ request.summary }}</td>
+      <td>
+        <button (click)="closeRequest(request.id)">Close</button>
+      </td>
+    </tr>
+  </table>
+  
